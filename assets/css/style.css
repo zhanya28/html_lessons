@@ -16,6 +16,11 @@
     font-style: normal;
 }
 
+header {
+    padding: 70px 0 20px 0;
+    line-height: 30px;
+    text-align: right;
+}
 
 html, body {
     font-family: 'Ubuntu', sans-serif;
@@ -28,6 +33,27 @@ html, body {
     min-width: 320px;
     max-width: 1060px;
     margin: 0 auto;
+}
+
+.logo, nav {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.logo {
+    float: left;
+}
+
+nav a, nav a:visited {
+    font-family: 'Playfair Display';
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #626262;
+    margin-left: 90px;
+    text-decoration: none;
+}
+nav a:hover {
+    text-decoration: underline;
 }
 
 .hero {
