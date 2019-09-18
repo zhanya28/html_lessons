@@ -17,9 +17,12 @@
 }
 
 header {
+    display: flex;
     padding: 70px 0 20px 0;
     line-height: 30px;
-    text-align: right;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
 }
 
 html, body {
@@ -40,10 +43,6 @@ html, body {
     vertical-align: middle;
 }
 
-.logo {
-    float: left;
-}
-
 nav a, nav a:visited {
     font-family: 'Playfair Display';
     font-size: 14px;
@@ -51,6 +50,7 @@ nav a, nav a:visited {
     color: #626262;
     margin-left: 90px;
     text-decoration: none;
+    flex-grow: 2;
 }
 nav a:hover {
     text-decoration: underline;
@@ -59,4 +59,10 @@ nav a:hover {
 .hero {
     width: 100%;
     height: auto;
+}
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
