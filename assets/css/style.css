@@ -2,16 +2,16 @@
 
 @font-face {
     font-family: 'Playfair Display';
-    src: url('./assets/css/fonts/PlayfairDisplay-Italic.woff2') format('woff2'),
-        url('./assets/css/fonts/PlayfairDisplay-Italic.woff') format('woff');
+    src: url('./../fonts/PlayfairDisplay-Italic.woff2') format('woff2'),
+        url('./../fonts/PlayfairDisplay-Italic.woff') format('woff');
     font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Playfair Display';
-    src: url('./assets/css/fonts/PlayfairDisplay-Bold.woff2') format('woff2'),
-        url('./assets/css/fonts/PlayfairDisplay-Bold.woff') format('woff');
+    src: url('./../fonts/PlayfairDisplay-Bold.woff2') format('woff2'),
+        url('./../fonts/PlayfairDisplay-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }
@@ -23,6 +23,10 @@ header {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
+}
+
+.text {
+    padding: 100px 0 135px 0;
 }
 
 html, body {
@@ -58,11 +62,102 @@ nav a:hover {
 
 .hero {
     width: 100%;
-    height: auto;
+    height: 500px;
+    background-image: url("./../images/hero.jpg");
+    background-size: cover;
 }
 
 .newsletter {
     display: flex;
+    height: 280px;
     flex-direction: column;
     align-items: center;
+    background-color: #f0f0f0;
+    margin: 125px 0 100px 0;
+}
+
+.input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.sign_up {
+    margin: 80px 0;
+}
+
+.SignUpButton {
+    align-items: center;
+    vertical-align: middle;
+    background: transparent;
+    border: none;
+}
+
+.btn2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 165px 0 1370px 0;
+}
+
+.LoadMore {
+    font-family: 'Ubuntu', sans-serif;
+    height: 60px;
+    width: 164px;
+    background: transparent;
+    border: 1px solid black;
+    -webkit-text-stroke-width: thin;
+}
+
+.end_section {
+    height: 100px;
+    background-color: #f0f0f0;
+}
+
+
+@media only screen
+       and (max-width: 767px) {
+    body {
+        box-sizing: border-box;
+        padding: 0 36px;
+        text-align: center;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    nav a, nav:visited {
+        margin-left: 20px;
+    }
+
+    .logo {
+        max-width: 120px;
+        margin: 0 auto 35px auto;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+@media only screen 
+       and (min-width: 760px) 
+       and (max-width: 1023px) {
+
+}
+
+@media only screen 
+       and (min-width: 1024px) 
+       and (max-width: 1366px) {
+
+}
+
+@media only screen  
+       and (max-width: 1367) {
+
 }
